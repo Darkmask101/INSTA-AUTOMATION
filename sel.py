@@ -17,16 +17,6 @@ PASS = 'XjuY#f9,7p;H)8Q'
 
 
 driver.get('https://www.instagram.com/accounts/login/')
-'''
-input_element = driver.find_element(By.CLASS_NAME, 'gLFyf')
-time.sleep(2)
-input_element.send_keys('instagram' + Keys.ENTER)
-
-time.sleep(2)
-input_element = driver.find_element(By.CLASS_NAME, 'LC20lb')
-input_element.click()
-time.sleep(1)
-'''
 
 username_field = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, 'username')))
 
@@ -44,3 +34,9 @@ time.sleep(1)
 login_button.click()
 
 time.sleep(30)
+
+
+time.sleep(15)
+
+driver.get('https://www.instagram.com/agastya_shah.01/')
+time.sleep(9)
